@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1>airbnb</h1>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+      
+      <p>city:</p>
+      <input type="text" name="city">
+      <br>
+
+      <p>zipcode:</p>
+      <input type="text" name="zipcode">
+      <br>
+
+      <p>latitude:</p>
+      <input type="text" name="latitude">
+      <br>
+
+      <p>longitude:</p>
+      <input type="text" name="longitude">
+      <br>
+
+      <p>accommodates:</p>
+      <input type="text" name="accommodates">
+      <br>
+
+      <p>bathrooms:</p>
+      <input type="text" name="bathrooms">
+      <br>
+
+      <p>bedrooms:</p>
+      <input type="text" name="bedrooms">
+      <br>
+
+      <p>beds:</p>
+      <input type="text" name="beds">
+      <br>
+      
+      <p>review_scores_rating:</p>
+      <input type="text" name="review_scores_rating">
+      <br>
+
+      <p>month:</p>
+      <input type="text" name="month">
+      <br>
+
+      <input type="submit" value='Get Predictions'>
+    </form>
+  </body>
+</html>
